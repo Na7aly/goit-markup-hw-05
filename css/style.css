@@ -44,6 +44,7 @@ body h2{
 }
 .request:hover{
 background-color:#188CE8 ;
+transition: color 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
 }
 .images-container img{
     width: 370px;
@@ -74,7 +75,8 @@ background-color:#188CE8 ;
     border: 0; 
     border-radius: 4px;
     background: #2196F3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease; 
 }
  .solution-container button{
     margin-top:  40px;
@@ -167,6 +169,7 @@ a{
 }
 .main-navigation a:hover{
      color:#2196F3;
+     transition: color 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
 }
 .main-navigation a:focus{color: #2196F3;}
 .current{
@@ -236,6 +239,7 @@ display: flex;
 }
 .information a:hover{
     color:#2196F3;
+    transition: color 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
 }
 .contacts{color:#FFFFFF;
     font-size: 14px;
@@ -289,7 +293,9 @@ button:hover{
     background-color:#2196F3;
     border-radius: 4px;
     background: #2196F3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);}
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+}
 
  button:active{
     color: #FFF;
@@ -359,7 +365,7 @@ button:focus{
 }
 .button-filter:hover {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-
+    transition: box-shadow 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
 }
 .filter-section {
     display: flex;
@@ -481,10 +487,11 @@ margin-top: -22px;
     padding: 16px 32px 16px 32px;
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
-    transition: fill 250ms ease, border-color 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
     cursor:pointer;
     justify-content: center;
     gap:30px ;
+    transition: fill 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+    transition: border 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
 }
 .regular-customers-svgs:hover {
     border:1px solid #2196F3;
@@ -530,12 +537,14 @@ margin-top: -22px;
     border: 1px solid transparent;
     border-radius: 50%;
     fill: rgba(175, 177, 184, 1);
+    transition: fill 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
 }
 .svg-link:hover{
     border: 1px solid #2196F3;
     border-radius: 50%;
     background-color: #2196F3;
     fill:rgba(255, 255, 255, 1);
+    transition: fill 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
 }
 .address-icon .svg-link{
     border: 1px solid transparent;
@@ -547,6 +556,7 @@ margin-top: -22px;
     border-radius: 50%;
     background-color: #2196F3;
     fill:rgba(255, 255, 255, 1);
+    transition: backraund-color 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
 }
 .info:hover{
     color:#2196F3;
@@ -710,6 +720,9 @@ background-color: #fff;
     height: 581px;
     border-radius:4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
+    transform: translate(-50%, -50%);
+
 }
 .close-modal-svg {
     width:18px;
@@ -719,6 +732,7 @@ background-color: #fff;
 }
 .close-modal-svg:hover{
     background-color: #FFF;
+    transition: backgraund-color 250ms ease, cubic-bezier(0.4, 0, 0.2, 1) ease;
 }
 .close-modal-button:hover{
     background-color: #FFF;
@@ -742,3 +756,7 @@ background-color: #fff;
     visibility: hidden;
 }
 
+.modal-box  { opacity : 0; transition:opacity 1s;
+    position : absolute;
+    }
+.modal-box:hover { opacity : 1}
