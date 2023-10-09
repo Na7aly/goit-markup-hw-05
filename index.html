@@ -68,7 +68,7 @@
           <div class="solution">
             <div class="solution-container">
               <h1 class="title">EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS</h1>
-              <button class="request" type="button">Request our service</button>
+              <button data-modal-open class="request" type="button">Request our service</button>
             </div>
           </div>
 
@@ -141,21 +141,36 @@
         <div class="images-container">
           <ul>
             <li>
-              <img
-                src="./images/image1.jpg"
-                alt="A robust and highly flexible web app"
-                width="370"
-              />
+              <div class="what-we-do-bg">
+                <div class="what-we-do-background">
+                  <p class="what-we-do-text">DESKTOP APPS</p>
+                </div>
+                <img
+                  src="./images/image1.jpg"
+                  alt="A robust and highly flexible web app"
+                  width="370"
+                />
+              </div>
             </li>
             <li>
+              <div class="what-we-do-bg">
+              <div class="what-we-do-background">
+                <p class="what-we-do-text">MOBILE APPS</p>
+              </div>
               <img src="./images/image2.jpg" alt="Web UI" width="370" />
+            </div>
             </li>
             <li>
+              <div class="what-we-do-bg">
+                <div class="what-we-do-background">
+                  <p class="what-we-do-text">DESIGN SOLUTIONS</p>
+                </div>
               <img
                 src="./images/image3.jpg"
                 alt="Graphics Pictures"
                 width="370"
               />
+            </div>
             </li>
           </ul>
         </div>
@@ -349,7 +364,7 @@
             
         </div>
       </section>
-    <!--Section ''Regular Customer''-->
+    <!--Section ''Regular Customer''--><!--Section ''Regular Customer''-->
     <section> 
       <div class="container">
       <h2 class="heading-section">Regular Customers</h2>
@@ -444,5 +459,17 @@
       </div>
       
     </footer>
+    <!--Request our service modal-->
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <div class="modal-box">
+        <button class="close-modal-button" data-modal-close ><svg class="close-modal-svg">
+          <use href="./symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+        </svg></button>
+        </div>
+      </div>
+
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

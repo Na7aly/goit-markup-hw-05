@@ -20,7 +20,7 @@ body h2{
 }
 .item p{
     color:#757575;
-    font-size: 14px;tit
+    font-size: 14px;
     font-weight: 400;
     line-height: 150%;
 }
@@ -81,6 +81,7 @@ background-color:#188CE8 ;
     margin-right: 719px;
     margin-bottom:  210px;
     margin-left: 720px;
+    padding: 10px 20px 10px 20px;
 }
 /*Our team section*/
 .team{
@@ -334,8 +335,7 @@ button:focus{
     gap: 30px;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-left: 0px;
-    
+    padding-left: 0px;    
 }
  .button-filter{
     border-radius: 4px;
@@ -458,7 +458,6 @@ margin-top: -22px;
     width:70px;
     height:70px; 
 }
-
 .heading-section {
     display: flex;
     justify-content: center;
@@ -478,7 +477,7 @@ margin-top: -22px;
 }
 .regular-customers-svgs {
     height: 92px;
-     width: 170px;
+    width: 170px;
     padding: 16px 32px 16px 32px;
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
@@ -529,8 +528,8 @@ margin-top: -22px;
     justify-content: center;
     align-items: center;
     border: 1px solid transparent;
-        border-radius: 50%;
-        fill: rgba(175, 177, 184, 1);
+    border-radius: 50%;
+    fill: rgba(175, 177, 184, 1);
 }
 .svg-link:hover{
     border: 1px solid #2196F3;
@@ -607,7 +606,6 @@ margin-top: -22px;
 .rectangle-three:hover{
     background-color: #2196F3;
 }
-
 .list-nav{
     display: flex;
     flex-direction:column;
@@ -641,3 +639,106 @@ margin-top: -22px;
     margin-left:15px;
     margin-right:15px;
 }
+
+.what-we-do-background{
+    width:370px;
+    height:70px;
+    position:absolute;
+    background-color:rgba(47, 48, 58, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom:0;
+    margin-bottom: 3px;
+}
+
+.what-we-do-text{
+    font-family:Roboto, sans-serif;
+    color:#FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+}
+.what-we-do-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.description {
+    font-family:Roboto,Verdana, Geneva, Tahoma, sans-serif;
+    color:#F5F4FA;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    width: 370px;
+    height: 294px;
+    position:absolute;
+    background-color:rgba(33, 150, 243, 0.9);
+    transform:translatey(110%);
+    transition: transform 250ms ease-in-out;      
+}
+.overlay {
+    position: relative;
+    overflow: hidden;
+}
+.projects-grid-img:hover .description {
+    transform: translatey(0);
+}
+
+.description p {
+    width:80%;
+    padding-left: 25px;
+    padding-top: 45px;
+    padding-bottom:73px;
+}
+.modal {
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0, 0, 0, 0.2);
+    top:0px;
+    left:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-box {
+background-color: #fff;
+    width: 528px;
+    height: 581px;
+    border-radius:4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.close-modal-svg {
+    width:18px;
+    height:18px;
+    padding-top: 3px;
+    padding-right: 3px;   
+}
+.close-modal-svg:hover{
+    background-color: #FFF;
+}
+.close-modal-button:hover{
+    background-color: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    box-shadow: none;
+}
+.close-modal-button {
+    position:absolute;
+    margin-left:490px;
+    margin-bottom:543px;
+    margin-top:8px;
+    width:30px;
+    height:30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius:50%;
+    background-color:transparent;
+    cursor:pointer;
+}
+.is-hidden {
+    visibility: hidden;
+}
+
